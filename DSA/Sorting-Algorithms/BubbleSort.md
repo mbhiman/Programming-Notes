@@ -1,6 +1,6 @@
 # Bubble Sort 
 
-Bubble Sort is an algorithm that sorts an array from the lowest value to the highest value.
+Bubble Sort is an algorithm that sorts an array from the lowest value to the highest value. It repeatedly compares adjacent elements in the array and swaps them if they are in the wrong order. This process continues until the array is sorted.
 
 ## Algorithm:
 1. Go through the array, one value at a time.
