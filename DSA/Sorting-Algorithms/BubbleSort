@@ -45,3 +45,61 @@ public class BubbleSort {
     }
 }
 ```
+
+## Optimized Bubble Sort with `swapped` Variable
+
+Using a **`swapped` variable** optimizes the Bubble Sort algorithm by terminating the sorting process early if no swaps are made during a complete pass, indicating the array is already sorted.
+
+### Why use the `swapped` variable?
+- **Efficiency**: It stops the algorithm early if the array is already sorted or nearly sorted.
+- **Time Complexity**:
+  - Worst case: \( O(n^2) \)
+  - Best case: \( O(n) \) (when no swaps occur).
+
+---
+
+## Java Code Implementation
+
+```java
+public class BubbleSort {
+    public static void sortingAlgo(int[] arr) {
+        int n = arr.length;
+        boolean swapped;
+
+        // Outer loop for multiple passes
+        for (int i = 0; i < n - 1; i++) {
+            swapped = false;  // Reset the swapped flag for each pass
+            // Inner loop for comparing adjacent elements
+            for (int j = 0; j < n - i - 1; j++) {
+                // Swap if the current element is greater than the next
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                    swapped = true;  // Mark that a swap occurred
+                }
+            }
+            // If no elements were swapped, the array is sorted
+            if (!swapped) {
+                break;
+            }
+        }
+
+        // Print the sorted array
+        System.out.println("After bubble sorting:");
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {10, 4, 6, 12, 14};
+        System.out.print("The actual array: ");
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+
+        sortingAlgo(arr);  // Call the bubble sort function
+    }
+}
