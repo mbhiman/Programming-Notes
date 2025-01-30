@@ -65,7 +65,7 @@ class SelectionSort {
 | End   | 4  9  10  12  15  |
 
 ### **Final Sorted Array**
-4  |  9  |  |  10  |  12  |  15
+4  |  9  |   10  |  12  |  15
 
 ### Time Complexity
 | Case        | Complexity |
