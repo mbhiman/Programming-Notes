@@ -146,11 +146,11 @@ Original: **[12, 8, 9, 3, 11, 5, 4]** **==>** **[12]** **[8]** **[9]** **[3]**  
 - Extra space is needed for temporary arrays during merging.
 
 ## **When to Use Merge Sort?**
-✅ Works well for large datasets  
-✅ **Stable sort** (preserves order of equal elements)  
-✅ Efficient for **linked lists**  
-❌ Not in-place (requires extra memory)  
-❌ Not ideal for small arrays (Insertion Sort is better for small inputs).
+    ✅ Works well for large datasets  
+    ✅ **Stable sort** (preserves order of equal elements)  
+    ✅ Efficient for **linked lists**  
+    ❌ Not in-place (requires extra memory)  
+    ❌ Not ideal for small arrays (Insertion Sort is better for small inputs).
 ---
 
 ### **Conclusion**
